@@ -1,7 +1,8 @@
-.app {
+/*.app {
   height: 100vh;
   width: 100vw;
   transition: background-color 1s ease-in;
+  font-family: "Raleway";
 }
 
 .app__header,
@@ -18,8 +19,108 @@
 
 /*  Search bar */
 
-/* Current weather */
+/* Current weather */ 
+body{
+  margin: 0;
+  background-color: #9ccef3;
+  
+}
+.app {
+  
+  transition: background-color 1s ease-in;
+  font-family:"Raleway", sans-serif;
+  
+  
+}
+
+
+@media only screen and (max-width: 582px) {
+  .app{
+    font-size: small;
+    margin: 0px;
+    
+}}
+.header{
+  margin-top: 0px;
+  padding: 10px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: #759EDA;
+}
+
+input{
+  border:none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+button{
+  background-color: #5879C7;
+  padding: 10px;
+  border: none;
+  color:black;
+}
+
+.content div{
+  text-align: center;
+  padding-bottom:20px;
+}
+.content img{
+  width:150px;
+  height:150px;
+}
+.content{
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display:grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr 1fr 1fr;
+}
+.list{
+  margin-left:5px;
+}
+.content ul{
+  list-style: none;
+  margin:0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction:row;
+}
+.content li{
+  margin-right:10px;
+}
+
+.hour-weather-t li{
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+/*hourl weather css*/
+
+.hour-weather-t{
+  list-style: none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-bottom:50px;
+}
+time{
+  padding-bottom:15px;
+  margin: 0 auto;
+}
+p{
+  margin: 0 auto;
+  padding-top:15px;
+}
+li img{
+  width:80px;
+  height:80px;
+}
+
 
 div {
-  border: 5px solid red;
+  border:none;
 }
